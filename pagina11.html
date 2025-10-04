@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Fundo de Tela</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fredoka+One&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      background-image: url("kiti.png");
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #f0f0f0;
+      text-align: center; 
+    }
+
+    .titulo {
+      margin-top: 100px;
+    }
+
+    .cursivo {
+      font-family: 'Dancing Script', cursive;
+      font-size: 90px;
+      color: #FF1493; /* rosa forte */
+      text-shadow: 3px 3px 8px #FFB6C1; /* rosa claro para contraste */
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .destaque {
+      font-family: 'Fredoka One', cursive;
+      font-size: 90px; /* um pouco menor */
+      color: #FF007F;
+      letter-spacing: 5px;
+      display: inline-block;
+    }
+
+    .destaque span {
+      display: inline-block;
+      text-shadow: 4px 4px 12px #FFB6C1, 0 0 25px #FF69B4;
+    }
+
+    /* Curvatura suave para cada letra */
+    .destaque span:nth-child(1) { transform: rotate(-10deg); }
+    .destaque span:nth-child(2) { transform: rotate(-7deg); }
+    .destaque span:nth-child(3) { transform: rotate(-4deg); }
+    .destaque span:nth-child(4) { transform: rotate(-2deg); }
+    .destaque span:nth-child(5) { transform: rotate(0deg); }
+    .destaque span:nth-child(6) { transform: rotate(2deg); }
+    .destaque span:nth-child(7) { transform: rotate(4deg); }
+    .destaque span:nth-child(8) { transform: rotate(7deg); }
+    .destaque span:nth-child(9) { transform: rotate(10deg); }
+    .destaque span:nth-child(10) { transform: rotate(7deg); }
+    .destaque span:nth-child(11) { transform: rotate(4deg); }
+    .destaque span:nth-child(12) { transform: rotate(2deg); }
+    .destaque span:nth-child(13) { transform: rotate(0deg); }
+
+    /* Estilo do botão */
+    .botao-voltar {
+      background: #FF1493;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 18px;
+      margin-top: 50px;
+      transition: background 0.3s;
+    }
+
+    .botao-voltar:hover {
+      background: #cc117a;
+    }
+  </style>
+</head>
+<body>
+  <div class="titulo">
+    <span class="cursivo">Eai</span>
+    <div class="destaque">
+      <span>M</span><span>E</span> <span>C</span><span>O</span><span>N</span><span>H</span><span>E</span><span>C</span><span>E</span> <span>B</span><span>E</span><span>M</span>?
+    </div>
+  </div>
+
+ <button class="botao-voltar" onclick="window.location.href='site.experimento.html'">
+  Voltar a pagina Inicial
+</button>
+
+</body>
+</html>
